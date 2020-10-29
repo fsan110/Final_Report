@@ -1,4 +1,4 @@
-\documentclass[compsoc,a4paper,12pt,conference,onecolumn]{IEEEtran}
+    \documentclass[compsoc,a4paper,12pt,conference,onecolumn]{IEEEtran}
 \IEEEoverridecommandlockouts
 
 
@@ -15,20 +15,28 @@
 \usepackage{import}
 \usepackage{subfiles}
 
-
+\usepackage{float}
 \usepackage[ddmmyyyy]{datetime}
 
+% Where to put pics
+\graphicspath{ {images/} }
+
+% for line spacing
+\usepackage{setspace}
 
 \begin{document}
-
-
+% double line spacing
+\doublespacing
 
 \subfile{sections/CoverPage}
 
 
 \subfile{sections/Abstract}
 
+\singlespacing
 \tableofcontents
+\listoffigures
+\doublespacing
 
 \subfile{sections/Introduction}
 \subfile{sections/LiteratureReview}
@@ -38,12 +46,13 @@
 
 
 \section{Acknowledgements}
-We would like to thank the following people ....
+The group would like to thank the following people for their guidance and assistance in this project. Dr Zoran Salcic, for continued guidance throughout the project and sharing his expertise with us. Sang Nguyen for helping on all matters related to the raspberry pi cluster, much appreciated. The lab technicians Kavita,Sunita,Akshat,Felix and Moon, thanks for all the support. Adedimola thank you for sharing you knowledge on HW deployment of Neural Networks. Dr Nitish, thank you for sharing your expertise on FPGAs. Finally thanks to IT support for setting up the Host PC for remote access during lockdown. 
 
-\begin{thebibliography}{}
-\bibitem{b1} Ref 1
 
-\end{thebibliography}
+
+
+\subfile{sections/Bib}
+\subfile{sections/Appendix}
 
 
 \end{document}

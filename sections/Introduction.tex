@@ -1,8 +1,50 @@
 \begin{document}
 \section{Introduction}
+By the year 2025, the number of active internet of things (IoT) devices is estimated to become 22 million. This is a significant increase from only 7 million in 2018 [1] and has several implications.   
+
+ 
+
+The key implication is that IoT devices will command a larger share of internet connected devices as they outstrip traditional devices such as mobile phones. The devices can have all kinds of use cases in the implementation of smart cities. There are applications such as parking/traffic management, health, education and defense.  
+
+ 
+
+This presents a big data processing challenge, which must be addressed in a way that is both timely and secure. Existing enterprise solutions are based on cloud architecture. This creates issues of high latency and bandwidth, which impacts the ability for the system to operate as a real-time system, and also has a higher infrastructure cost. There are also privacy and security concerns with this solution. So, there is a need for a low-cost solution that allows implementing a real-time system able to perform big data analytics [2].  
+
+ 
+
+A classic transportation problem that needs to be addressed in development of smart cities is finding parking spaces. An estimated 30\% of traffic congestions are caused by drivers looking for parking spaces, causing increased fuel usage and  travel times for consumers. This problem is set to become exacerbated by the increasing urban population [24].  
+
+ 
+
+The proposed solution to solve this is a multi-tier architecture, also known as fog architecture [3,4]. Rather than accrue latency by transmitting data to the cloud, this solution is aimed at implementing a distributed computing model, where computations on the data will be done on a local cluster, which consists of low-cost devices.   
+
+ 
+
+The following report investigates such systems and their technical feasibility, while focusing on the objectives such as lowering cost, latency and implementing a real-time system with the capacity to handle big data operations. It aims to use such systems for an implementation in prediction of parking space occupancy.  
+
 
 \subsection{Research Intent}
-\subsection{Division of Work}
 
+This research project aims to look at the problem of smart parking (to predict car park occupancy). Through this use case we explore the use of fog computing to apply machine learning and data analysis to big data using a distributed embedded platform. Machine learning algorithms appropriate to this use case are studied.  
+
+ 
+
+The functional and non-functional requirements of machine learning for a real-time application should be determined in order to realise appropriate solutions. The research explores various solutions available for Machine Learning and determines whether they can be implemented at the fog Level to meet performance requirements.  
+
+ 
+
+In particular the solutions explored are software frameworks for training/deployment of machine learning models and hardware acceleration for deployment of pre-trained models. The research aims to propose a distributed platform for machine learning and deployment which does not require the cloud layer to operate, while retaining performance for real-time applications.  
+\subsection{Division of Work}
+Feneel Sanghavi worked on developing a machine learning model, implementing software solutions to train and deploy this model.  
+
+Utsav Trivedi looked at ways to use hardware as inference engines to deploy machine learning models for real-time applications.  
+
+
+Platform development and software/hardware integration was completed together, including investigating high level synthesis tools which convert pre-trained models to a hardware representation.  
+
+\subsection{ Report Contents}
+This report contains a Literature Review conducted in the intial phase of the project. 
+The methodology details the aims of the project,along with platform development and selection of software frameworks.
+Results section will show the research findings made while Discussion will outline the key issues encountered and how they can be mitigated with future work. 
 
 \end{document}
